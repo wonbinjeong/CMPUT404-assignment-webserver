@@ -7,6 +7,12 @@ See requirements.org (plain-text) for a description of the project.
 
 Make a simple webserver.
 
+References
+========================
+Check if file is in path
+* Link: https://stackoverflow.com/questions/82831/how-do-i-check-whether-a-file-exists-without-exceptions
+* Author: rslite https://stackoverflow.com/users/15682/rslite
+
 Contributors / Licensing
 ========================
 
@@ -17,7 +23,8 @@ server.py contains contributions from:
 * Abram Hindle
 * Eddie Antonio Santos
 * Jackson Z Chang
-* Mandy Meindersma 
+* Mandy Meindersma
+* Wonbin Jeong 
 
 But the server.py example is derived from the python documentation
 examples thus some of the code is Copyright © 2001-2013 Python
