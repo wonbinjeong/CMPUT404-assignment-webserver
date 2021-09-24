@@ -2,6 +2,7 @@
 from genericpath import isfile
 import socketserver
 import os.path
+import datetime
 
 # Copyright 2013 Abram Hindle, Eddie Antonio Santos
 # 
@@ -110,6 +111,9 @@ class MyWebServer(socketserver.BaseRequestHandler):
         if (file_extension == "css" or file_extension == "css/"):
             c_type = "text/css"
 
+        dt = datetime.datetime.now()
+        header += "Date: {}\n".format(dt)
+        header += "Connection: close\n"
         header += "Content-Type: {}\n".format(c_type)
 
         return header
